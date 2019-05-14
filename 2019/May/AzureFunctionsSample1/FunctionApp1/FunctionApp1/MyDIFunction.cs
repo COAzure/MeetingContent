@@ -25,7 +25,7 @@ namespace FunctionApp1
 
     public class MyDIFunction
     {
-        private static CosmosClient cosmosClient;
+        private readonly CosmosClient cosmosClient;
         private readonly IGreeter greater;
 
         public MyDIFunction(CosmosClient myClient, IGreeter myGreeter)
